@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_daa7cd034544469996a176423bd6d508 }}/fiapesteira:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./Esteiras/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
